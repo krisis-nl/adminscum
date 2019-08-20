@@ -1,14 +1,18 @@
 {
-  "name": "cogs-adminscum",
+  "name": "adminscum",
   "version": "1.0.0",
-  "description": "Read G-Portal server logs and save them to disk / database.",
+  "description": "Admin tools build on data collected through scraping G-Portal logs and server settings.",
+  "scripts": {
+    "serve": "node -r esm ./main"
+  },
   "dependencies": {
-    "browser": "^0.2.6",
-    "htmlparser2": "^3.10.0",
-    "moment": "^2.23.0",
-    "jquery": "^3.4.1",
-    "jsdom": "^15.1.1",
+    "cheerio": "^1.0.0-rc.3",
+    "esm": "^3.2.25",
     "lodash": "^4.17.15",
-    "promise": "^8.0.3"
-  }
+    "moment": "^2.23.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "author": "Kristian van der Valk",
+  "license": "MIT"
 }
